@@ -20,14 +20,57 @@
           data-toggle="dropdown"
           role="button"
         >
-          <span class="nav-link-inner--text">메뉴</span>
+          <span class="nav-link-inner--text">취업</span>
+        </a>
+        <router-link to="/landing" class="dropdown-item">취업</router-link>
+     
+      </base-dropdown>
+
+      <base-dropdown tag="li" class="nav-item">
+        <a
+          slot="title"
+          href="#"
+          class="nav-link"
+          data-toggle="dropdown"
+          role="button"
+        >
+          <span class="nav-link-inner--text">자격증</span>
         </a>
 
-        <router-link to="/landing" class="dropdown-item">취업</router-link>
         <router-link to="/profile" class="dropdown-item">자격증</router-link>
-        <router-link to="/login" class="dropdown-item">게시판</router-link>
-        <router-link to="/register" class="dropdown-item">??관리자??로그인??</router-link>
       </base-dropdown>
+
+      <base-dropdown tag="li" class="nav-item">
+        <a
+          slot="title"
+          href="#"
+          class="nav-link"
+          data-toggle="dropdown"
+          role="button"
+        >
+          <span class="nav-link-inner--text">게시판</span>
+        </a>
+
+        <router-link to="/login" class="dropdown-item">게시판</router-link>
+      </base-dropdown>
+
+      <!-- <base-dropdown tag="li" class="nav-item">
+        <a
+          slot="title"
+          href="#"
+          class="nav-link"
+          data-toggle="dropdown"
+          role="button"
+        >
+          <span class="nav-link-inner--text"></span>
+        </a>
+
+      
+        
+        
+        <router-link to="/register" class="dropdown-item">??관리자??로그인??</router-link>
+      </base-dropdown> -->
+      
 
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
@@ -90,13 +133,11 @@
 <script>
 import BaseNav from "@/components/BaseNav";
 import BaseDropdown from "@/components/BaseDropdown";
-import CloseButton from "@/components/CloseButton";
 
 export default {
   components: {
     BaseNav,
-    CloseButton,
-    BaseDropdown,
+    BaseDropdown
   },
 };
 </script>

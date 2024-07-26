@@ -1,25 +1,24 @@
 <template>
   <div>
-    <hero></hero>
-    <basic-elements></basic-elements>
-    <javascript-components></javascript-components>
-    <carousel></carousel>
+    <Sildcompoent></Sildcompoent>
+    <announcementcompoent></announcementcompoent>
+    <cardcompoent></cardcompoent>
+    <cardcompoent2></cardcompoent2>
   </div>
 </template>
 <script>
-import Hero from "./components/Hero";
-import BasicElements from "./components/BasicElements";
-
-import JavascriptComponents from "./components/JavascriptComponents";
-import Carousel from "./components/Carousel";
+import Sildcompoent from "./components/Sildcompoent";
+import announcementcompoent from "./components/announcementcompoent";
+import cardcompoent from "./components/cardcompoent";
+import cardcompoent2 from "./components/cardcompoent2";
 
 export default {
   name: "components",
   components: {
-    Hero,
-    BasicElements,
-    JavascriptComponents,
-    Carousel,
+    Sildcompoent,
+    announcementcompoent,
+    cardcompoent,
+    cardcompoent2
   },
 };
 </script>
